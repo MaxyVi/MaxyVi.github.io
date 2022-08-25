@@ -5,4 +5,5 @@
 # Max Vali
 Senior at CU Majoring in INFO Science.
 Excited to learn a new programming language
-Bird is the word s
+Bird is the word 
+I love the outdoors and take part in many outdoor activities.
