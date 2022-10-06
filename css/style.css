@@ -1,39 +1,44 @@
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
-    font-family: 'Quicksand';
-    background: #f5faff;
+    font-family: 'Courier New', monospace;
+}
+
+body{
+    margin: 0px;
+    display: block;
+    padding: 0;
+    font-family: 'Courier New', monospace;
 }
 
 h1{
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 300;
+    font-family: 'Courier New', monospace;
+    font-weight: 500;
     font-size: 52px;
     line-height: 64px;
-    color: #25282B;
+    color: black;
 }
 
 h2{
-    font-family: 'Quicksand';
+    font-family: 'Courier New', monospace;
     font-style: normal;
     font-weight: 500;
     font-size: 44px;
     line-height: 54px;
-    color: #25282B;
+    color: black;
 }
 
 h3{
-    font-family: 'Quicksand';
+    font-family: 'Courier New', monospace;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 40px;
-    color: #25282B;
+    color: black;
 }
 
 h4{
-    font-family: 'Quicksand';
+    font-family: 'Courier New', monospace;
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
@@ -42,7 +47,7 @@ h4{
 }
 
 h5{
-    font-family: 'Quicksand';
+    font-family: 'Courier New', monospace;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -51,7 +56,7 @@ h5{
 }
 
 h6{
-    font-family: 'Quicksand';
+    font-family: 'Courier New', monospace;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -60,7 +65,7 @@ h6{
 }
 
 .body_style1{
-    font-family: 'Quicksand';
+    font-family: 'Courier New', monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -69,7 +74,7 @@ h6{
 }
 
 .body_style2{
-    font-family: 'Quicksand';
+    font-family: 'Courier New', monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -79,7 +84,7 @@ h6{
 
 ul{
     list-style-type: circle;
-    font-family: 'Quicksand';
+    font-family: 'Courier New', monospace;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -89,7 +94,7 @@ ul{
 
 ol{
     list-style-type: upper-roman;
-    font-family: 'Quicksand';
+    font-family: 'Courier New', monospace;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -97,75 +102,61 @@ ol{
     color: #52575C;
 }
 
-.button{
-    background-color: #FFFFF0;
-    border: #52575C;
-    color: #25282B;
-    padding: 10px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px; 
+div{
+    display: block;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);}
+
+nav .logo{
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: 80px;
+    text-transform: uppercase;
+    color: #fff;
 }
 
-.button:hover{
-    background-color: #A0A4A8;
-    transition: 0.1s;
-}
-
-hr{
-    color: #25282B;
-}
-
-.topnav{
-    overflow: hidden;
-    background-color: #FFFFFF;
-}
-
-.topnav a {
+nav ul{
+    list-style: none;
     float: right;
-    color: #52575C;
-    background-color: #FFFFFF;
-    text-align: center;
-    padding: 8px 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
     text-decoration: none;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-size: 12px;
-    line-height: 32px;
-    
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.topnav a:hover{
-    background-color: #E8E8E8;
-    color: #007EFF;
+nav ul li a:hover{
+    background: rgb(0, 0, 0, 0.7);
+    border-radius: 6px;
 }
 
-.topnav a.active{
-    background-color: #007EFF;
-    color: white;
+.logo {
+    display: grid;
+    height: 100%;
 }
-
-.link{
-
+.backround-img {
+    max-width: 200vh;
+    max-height: 100vh;
+    margin: auto;
+    display: flex;
 }
-
-.logo_image{
-    margin-top: -6px;
-    position: absolute;
-    top: 6px;
-    left: 0px;
-    overflow: hidden;
-}
-
-.named{
-    font-size: 18px;
-}
-
 
 .grid {
     margin: 0 auto;
@@ -178,7 +169,7 @@ hr{
 
 @media only screen and (max-width:600px)
 {
-    .grid {
+    .row {
         background-color: red;
         margin: 0 auto;
         padding: 0 15px;
@@ -189,3 +180,252 @@ hr{
     }
 }
 
+.row {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #D29366;
+    height: 700px;
+    align-items: center;    
+}
+
+.row .col-2 {
+    flex-basis: 60%;
+    margin-right: 100px;
+}
+
+.row .col-1{
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+    font-family: 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: black;
+    align-self: center;
+    margin: 24px;
+}
+
+.container-index {
+    width: 100ah;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #D29366;
+}
+
+.location{
+    font-size: 16px;
+}
+
+.front-page-bio{
+    margin-top: 50px;
+}
+
+.title{
+    margin: 43px;
+    margin-top: 10px;
+    font-size: 38px;
+}
+
+.title p{
+    font-size: 22px;
+    font-family: 'Courier New', monospace;
+    font-weight: 10;
+    margin-top: -25px;
+}
+
+h3{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.project-color-top{
+    background-color: rgb(65, 62, 62);
+    height: 75px;
+}
+
+hr{
+    border-color: black;
+    border-width: medium;
+    border-style: solid;
+}
+
+.about-color-top{
+    background-color: rgb(65, 62, 62);
+    height: 75px;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column-photo {
+    display: flex;
+    width: 25%;
+    align-items: center;
+  }
+  
+  /* Style the images inside the grid */
+  .column-photo img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column-photo img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row-photo:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container-photo {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: fixed;
+    bottom: 0px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: px;
+    right: 10px;
+    color: #D29366;
+    font-size: 80px;
+    cursor: pointer;
+  }
+
+  .photo-color-top{
+    background-color:black);
+    height: 100px;
+}
+
+.title-photo{
+    margin: 43px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-size: 38px;
+    color: black;
+}
+
+.title-photo p{
+    font-size: 22px;
+    font-family: 'Courier New', monospace;
+    font-weight: 10;
+    margin-top: -25px;
+}
+
+.column-photo2 {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    margin-top: 55px;
+  }
+  
+  /* Style the images inside the grid */
+  .column-photo2 img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column-photo2 img:hover {
+    opacity: 1;
+  }
+
+  .row1 {
+    padding-left: 12.5%;
+    padding-right: 5%;
+    padding-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #D29366;
+    height: 150px;
+    align-items: center;    
+}
+
+  .row2 {
+    padding-left: 12.5%;
+    padding-right: 5%;
+    padding-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #D29366;
+    height: 150px;
+}
+
+.container-contact{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #D29366;
+}
+
+.title-1{
+    margin: 25px;
+}
+
+.title-1 h2{
+    text-align: center;
+    font-family: 'Courier New', monospace;    
+    font-size: 65px;
+    margin-top: 200px;
+}
+
+.title-1 p{
+    text-align: center;
+}
+
+.pdf1{
+margin: 24px;    
+}
+
+.pdf2{
+    margin: 24px;
+    float: left;
+}
+.pdf3{
+    margin: 24px;
+}
+
+.pdf-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 52px;
+}
+
+@media only screen and (max-width: 700px)
+{
+.menu-icon{
+    display: block;
+}}

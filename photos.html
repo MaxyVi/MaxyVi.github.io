@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Photography | Max Vali</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style> body{background-color: #D29366;}</style>
+
+    </head>    
+ <body>
+    <nav>
+        <div class="logo">MV</div>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="photos.html">Photography</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="photo-color-top"></div>
+    <div class="title-photo">
+      <h3>San Fransico Photography</h3>
+      <p>Recently I traveled my cousins wedding in San Fransico, here I was able to take some photos of a city that I have never explored before. Here are 4 of my favorite from the recent weekend:</p>
+      </div>
+      <hr>
+
+      <!-- The four columns -->
+      <div class="row1">
+        <div class="column-photo">
+          <img src="photos/IMG_1859.JPG" alt="Locked together" style="width: 204px;" onclick="myFunction(this);">
+        </div>
+        <div class="column-photo">
+          <img src="photos/IMG_1812.JPG" alt="Bridge in Fog" style="width: 204px" onclick="myFunction(this);">
+        </div>
+        <div class="column-photo">
+          <img src="photos/IMG_1850.JPG" alt="Speed Boat" style="width: 204px" onclick="myFunction(this);">
+        </div>
+        <div class="column-photo">
+          <img src="photos/IMG_1844.JPG" alt="Cool Dad" style="width: 204px" onclick="myFunction(this);">
+        </div>
+      </div>
+      
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+      
+      <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
+
+      <hr>
+
+      <div class="title-photo">
+        <h3>Glitched</h3>
+        <p>Glitched is a mini self-portrait series in which I took photos of my self, then introduced glitches into the encoded values of each image.</p>
+        </div>
+        <hr>
+  
+
+      <div class="row2">
+        <div class="column-photo2">
+          <img src="photos/Completed images copy/20211130-IMG_2454-2.jpg" style="width: 204px;" onclick="myFunction(this);">
+        </div>
+        <div class="column-photo2">
+          <img src="photos/Completed images copy/20211130-IMG_2420-2.jpg" style="width: 204px" onclick="myFunction(this);">
+        </div>
+        <div class="column-photo2">
+          <img src="photos/Completed images copy/20211130-IMG_2460-2.jpg" style="width: 204px" onclick="myFunction(this);">
+        </div>
+        <div class="column-photo2">
+          <img src="photos/Completed images copy/20211130-IMG_2422.jpg" style="width: 204px" onclick="myFunction(this);">
+        </div>
+      </div>
+
+ </body>
+</html>
