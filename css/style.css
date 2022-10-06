@@ -451,8 +451,15 @@ margin: 24px;
     .backround-img {
          width: 400px;
     }
-    .me-pic {
-        width: 200px;
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 24px;
+        margin-top: -320px;
     }
 }
 
@@ -461,4 +468,5 @@ margin: 24px;
         width: 50px;
         height: 100px;
     }
+
 }
