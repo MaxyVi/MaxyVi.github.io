@@ -464,9 +464,8 @@ margin: 24px;
 }
 
 @media screen and (max-width: 700px) {
-    .me-pic {
+    .col-2 {
         width: 50px;
-        height: 100px;
-    }
+        }
 
 }
