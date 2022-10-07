@@ -227,6 +227,10 @@ nav ul li a:hover{
     margin: 24px;
 }
 
+.col-1{
+    margin: 24px;
+}
+
 .container-index {
     width: 100ah;
     min-height: 100vh;
@@ -242,6 +246,7 @@ nav ul li a:hover{
 .front-page-bio{
     margin-top: 50px;
 }
+
 
 .title{
     margin: 43px;
@@ -427,7 +432,7 @@ margin: 24px;
 .pdf-container {
     position: relative;
     text-align: center;
-    color: white;
+    color: black;
     display: flex;
     justify-content: space-between;
   }
@@ -447,7 +452,7 @@ margin: 24px;
     display: block;
 }}
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     .backround-img {
          width: 400px;
     }
@@ -461,11 +466,51 @@ margin: 24px;
         font-size: 24px;
         margin-top: -320px;
     }
+
+    .column-photo{
+        width: 100px;
+    }
+
+    .title-photo h3{
+        font-size: ;
+    }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     .col-2 {
         width: 50px;
         }
 
+    .column-photo{
+        width: 100px;
+
+    }
+
+}
+
+.short-nav{
+    display: none;
+}
+
+
+
+@media (max-width: 700px) {
+    .short-nav {display: inline-block; float: right; }
+    .full-nav {display: none; }
+    .maxfull {width: 100px;}
+
+}
+
+@media (max-width: 700px) {
+    .column-photo {display: 40px;}
+    .column-photo2 {display: 40px;}
+}
+
+@media (max-width: 700px) {
+    .row1 {display: none;}
+    .row1-small {display:contents}
+}
+
+.row1-small{
+    display: none;
 }
