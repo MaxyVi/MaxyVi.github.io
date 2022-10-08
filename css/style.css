@@ -231,7 +231,7 @@ nav ul li a:hover{
 }
 
 .container-index {
-    width: 100vh;
+    width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
@@ -434,6 +434,11 @@ margin: 24px;
     justify-content: space-between;
   }
 
+
+.pdf-row{
+    display: flex;
+    justify-content: space-between;
+}
 .centered {
     position: absolute;
     top: 50%;
