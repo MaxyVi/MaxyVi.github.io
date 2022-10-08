@@ -309,7 +309,11 @@ hr{
     display: table;
     clear: both;
   }
-  
+
+  .container{
+    display: none;
+  }
+
   /* The expanding image container */
   .container-photo {
     position: relative;
@@ -439,11 +443,6 @@ margin: 24px;
     font-size: 52px;
 }
 
-@media only screen and (max-width: 700px)
-{
-.menu-icon{
-    display: block;
-}}
 
 @media screen and (max-width: 500px) {
     .backround-img {
