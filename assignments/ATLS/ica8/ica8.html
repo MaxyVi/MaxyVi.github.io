@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Home | Max Vali</title>
+        <link rel="stylesheet" href="../../../css/style.css">
+        <style> body{background-color: black;}</style>
+
+    </head>    
+ <body>
+    <nav>
+        <div class="logo">MV</div>
+        <div class="full-nav">
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="photos.html">Photography</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+        <div class="short-nav">
+            <ul class="navlist">
+            <li><a href="index.html">H</a></li>
+            <li><a href="projects.html">Project</a></li>
+            <li><a href="photos.html">Photo</a></li>
+            <li><a href="contact.html">C</a></li>
+        </ul>
+        </div>
+    </nav>
+        <div class="home-contain">
+            <img src="../../../img/pixs.png" alt="GlacierPic" class="backround-img">
+            <div class="centered"><strong>WELCOME</strong></div>
+
+        </div>
+    <div class="container-index">
+        <div class="row">
+            <div class="col-1">
+                <h1><strong>Hi, I'm Max</strong></h1>
+                <p class="front-page-bio"><strong> Major in Information Science ∙ Minor in Creative Technology Design</strong></p>
+                <p class="location"><em>Boulder, Colorado</em></p>
+            </div>
+            <div class="col-2">
+                <div id="imghover">
+                    <img id='image' src="../../../photos/Completed-images-copy/max-senior2.png" alt="MaxValiHead" class="maxfull" style="width:400px; height:auto; margin-right: 400px; float:right; margin-top: -50px;"> 
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        let menuList = document.getElementById("navlist");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+          if(menuList.style.maxHeight == "0px")
+          {
+            menuList.style.maxHeight = "170px";
+          }
+          else
+          {
+            menuList.style.maxHeight = "0px";
+          }
+        }
+      </script>
+    <script src="../js/main.js"></script>
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
