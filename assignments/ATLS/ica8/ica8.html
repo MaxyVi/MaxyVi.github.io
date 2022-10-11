@@ -36,7 +36,7 @@
     <div class="container-index">
         <div class="row">
             <div class="col-1">
-                <h1><strong>Hi, I'm Max</strong></h1>
+                <h1 id="timed"><strong>Good Evening, I'm Max</strong></h1>
                 <p class="front-page-bio"><strong> Major in Information Science ∙ Minor in Creative Technology Design</strong></p>
                 <p class="location"><em>Boulder, Colorado</em></p>
             </div>
@@ -63,6 +63,11 @@
         }
       </script>
     <script src="../js/main.js"></script>
+    <script>
+        if (new Date().getHours() < 15) {
+            document.getElementById("timed").innerHTML = "<strong>Good day, I'm Max</strong>";
+        }
+    </script>
  </body>
  </html>
 
