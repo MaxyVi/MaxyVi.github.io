@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+}
+
+body{
+    margin: 0px;
+    display: block;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+}
+
+h1{
+    font-family: 'Courier New', monospace;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 64px;
+    color: black;
+}
+
+h2{
+    font-family: 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 54px;
+    color: black;
+}
+
+h3{
+    font-family: 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: black;
+}
+
+h4{
+    font-family: 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 24px;
+    color: #25282B;
+}
+
+h5{
+    font-family: 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #25282B;
+}
+
+h6{
+    font-family: 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #25282B;
+}
+
+.body_style1{
+    font-family: 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #25282B;
+}
+
+.body_style2{
+    font-family: 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #25282B;
+}
+
+ul{
+    list-style-type: circle;
+    font-family: 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #52575C;
+}
+
+ol{
+    list-style-type: upper-roman;
+    font-family: 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #52575C;
+}
