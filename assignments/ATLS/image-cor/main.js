@@ -41,7 +41,7 @@ imgArray[4].alt = "pic5";
 
 /* Looping through images */
 
-function thumbnailLoop() {
+function thumbLoop() {
     var i;
     for (i = 0; i < imgArray.length; i++) {
     var newImage = document.createElement('img');
@@ -52,8 +52,8 @@ function thumbnailLoop() {
 
 /* Wiring up the Darken/Lighten button */
 
-btn.addEventListener('click', (e) => {
-    if (e.target.className == 'dark') {
+btn.addEventListener('click', (c) => {
+    if (c.target.className == 'dark') {
       btn.setAttribute('class', 'light');
       btn.textContent = 'Lighten';
       overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
@@ -66,13 +66,14 @@ btn.addEventListener('click', (e) => {
   }
   });
 
-thumbnailLoop();
+thumbLoop();
 
 /* Making the clicked thumbnail the large image */
 
-thumbBar.addEventListener('click', (e) => {
-  if(e.target && e.target.nodeName == "IMG") {
-    displayedImage.src = e.target.src;
+thumbBar.addEventListener('click', (c) => {
+  if(c.target && c.target.nodeName == "IMG") {
+    displayedImage.src = c.target.src;
+    displayedImage.alt = c.target.alt;
 }
 });
 
