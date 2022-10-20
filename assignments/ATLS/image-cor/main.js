@@ -43,7 +43,7 @@ imgArray[4].alt = "pic5";
 
 function thumbnailLoop() {
     var i;
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < imgArray.length; i++) {
     var newImage = document.createElement('img');
     newImage.setAttribute('src', "images/pic" + (i+1) + ".jpg");
     thumbBar.appendChild(newImage);
