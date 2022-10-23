@@ -5,49 +5,25 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-var imgArray = new Array();
-
-imgArray[0] = new Image();
-imgArray[0].src = "images/pic1.jpg";
-
-imgArray[1] = new Image();
-imgArray[1].src = "images/pic2.jpg";
-
-imgArray[2] = new Image();
-imgArray[2].src = "images/pic3.jpg";
-
-imgArray[3] = new Image();
-imgArray[3].src = "images/pic4.jpg";
-
-imgArray[4] = new Image();
-imgArray[4].src = "images/pic5.jpg";
-
-/* Declaring the alternative text for each image file */
-
-imgArray[0] = new Image();
-imgArray[0].alt = "pic1";
-
-imgArray[1] = new Image();
-imgArray[1].alt = "pic2";
-
-imgArray[2] = new Image();
-imgArray[2].alt = "pic3";
-
-imgArray[3] = new Image();
-imgArray[3].alt = "pic4";
-
-imgArray[4] = new Image();
-imgArray[4].alt = "pic5";
-
+const images = ['pic1.jpg', `pic2.jpg`, `pic3.jpg`, `pic4.jpg`, `pic5.jpg`];
+const alts = {
+  'pic1.jpg' : 'Closeup of a human eye',
+  'pic2.jpg' : 'Rock that looks like a wave',
+  'pic3.jpg' : 'Purple and white pansies',
+  'pic4.jpg' : 'Section of wall from a pharoah\'s tomb',
+  'pic5.jpg' : 'Large moth on a leaf'
+}
 /* Looping through images */
 
-function thumbLoop() {
-    var i;
-    for (i = 0; i < imgArray.length; i++) {
-    var newImage = document.createElement('img');
-    newImage.setAttribute('src', "images/pic" + (i+1) + ".jpg");
+for (const image of images) {
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', `images/${image}`);
+    newImage.setAttribute('alt', alts[image]);
     thumbBar.appendChild(newImage);
-  }
+    newImage.addEventListener('click', e => {
+      displayedImage.src = e.target.src;
+      displayedImage.alt = e.target.alt;
+    });
   }
 
 /* Wiring up the Darken/Lighten button */
