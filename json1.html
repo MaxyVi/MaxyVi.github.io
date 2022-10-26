@@ -46,7 +46,7 @@
       const cats = JSON.parse(catString);
 
     for (let i = 0; i < cats.length; i++) {
-    for (const kitten of cats[i].kittens) {
+      for (const kitten of cats[i].kittens) {
         total++;
         if (kitten.gender === 'm') {
         male++;
