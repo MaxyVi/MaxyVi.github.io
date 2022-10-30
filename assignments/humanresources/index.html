@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Employees of StarTech</title>
+
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+
+        const section = document.querySelector('section');
+
+        let para1 = document.createElement('p');
+        let para2 = document.createElement('p');
+
+        var EmployStr = '{"employee_list":[{"name": "Sam", "dept": "Tech", "designation": "Manager", "salary": "40000", "raiseeligible": "True"},{"name": "Mary", "dept": "Finance", "designation": "trainee", "salary": 18500, "raiseeligible": "True"},{"name": "Bill", "dept": "HR", "designation": "Executive", "salary": 21200, "raiseeligible": "False"}]}';
+            console.log(EmployStr);
+        var CompStr = '{"company":[{"name": "Tech Stars", "url": "www.techstars.site"}]}'
+            console.log(CompStr)
+        var AddE = '{"name": "Anna", "dept": "tech", "designation": "Executive", "salary": "25600", "raiseeligible": "False"}'
+
+        
+        const obj1 = JSON.parse(EmployStr);
+        const obj2 = JSON.parse(AddE);
+
+        const mergedObj = Object.assign(obj1, obj2);
+        const jsonStr = JSON.stringify(mergedObj)
+        
+        console.log(jsonStr)
+        
+        function displaySalaryInfo(salaryString){
+            let total = 0;
+
+            const salaries = JSON.parse(salaryString)
+
+            for (let i =0; i< salaries.length; i++){
+                for (const salary of salaries[i].salary){
+                    total++;
+                }
+            }
+        
+            
+            var totalSum = Number(total.value);
+            console.log(totalSum)
+        }
+
+        console.log(displaySalaryInfo)
+
+        var totalSum = Number(total.value);
+            console.log(totalSum)
+
+
+    </script>
+  </body>
+</html>
