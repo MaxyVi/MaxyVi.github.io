@@ -18,12 +18,12 @@
       </section>
 
     <script>
-
+        //question 1/2
         const section = document.querySelector('section');
 
         let para1 = document.createElement('p');
         let para2 = document.createElement('p');
-
+//      question 3
         var EmployStr = '{"employee_list":[{"name": "Sam", "dept": "Tech", "designation": "Manager", "salary": "40000", "raiseeligible": "True"},{"name": "Mary", "dept": "Finance", "designation": "trainee", "salary": 18500, "raiseeligible": "True"},{"name": "Bill", "dept": "HR", "designation": "Executive", "salary": 21200, "raiseeligible": "False"}]}';
             console.log(EmployStr);
         var CompStr = '{"company":[{"name": "Tech Stars", "url": "www.techstars.site"}]}'
@@ -38,7 +38,7 @@
         const jsonStr = JSON.stringify(mergedObj)
         
         console.log(jsonStr)
-        
+        //question 4
         function displaySalaryInfo(salaryString){
             let total = 0;
 
@@ -56,9 +56,6 @@
         }
 
         console.log(displaySalaryInfo)
-
-        var totalSum = Number(total.value);
-            console.log(totalSum)
 
 
     </script>
