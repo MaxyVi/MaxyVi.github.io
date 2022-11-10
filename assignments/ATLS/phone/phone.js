@@ -1,15 +1,42 @@
-function getMousePosition(canvas, event) {
-    let rect = canvas.getBoundingClientRect();
-    let x = event.clientX - rect.left;
-    let y = event.clientY - rect.top;
-    console.log("Coordinate x: " + x, 
-                "Coordinate y: " + y,
-                "Added x and y: " + x+y);
-}
+//declare 3 variables for sections of phone #
+//create clickcounter
+var areaCode = 0;
+var middle = 0;
+var last = 0;
 
-let canvasElem = document.querySelector("canvas");
+var clicks = 0;
+
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var added = event.clientX + event.clientY;
+    var coor = added;
+    document.getElementById("demo").innerHTML = coor;
+  }
   
-canvasElem.addEventListener("mousedown", function(e)
-{
-    getMousePosition(canvasElem, e);
-});
+  function clearCoor() {
+    document.getElementById("demo").innerHTML = "";
+  }
+
+  function clickCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var added = event.clientX + event.clientY;
+    var areaCode = added;
+    var middle = added;
+    var last = added;
+    clicks += 1;
+    if (clicks == 1){
+        if ()
+        area.textContent = "(" + areaCode +")-";
+    }
+    if (clicks == 2){
+        mid.textContent = middle + "-";
+    }
+    if (clicks == 3){
+        fin.textContent = last;
+    }
+  }
+  function finalNum(event){
+        
+}

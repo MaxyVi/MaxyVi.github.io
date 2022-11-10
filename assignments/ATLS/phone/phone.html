@@ -1,7 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.main {
+  width: 1773px;
+  height: 600px;
+  border: 1px solid black;
+  background-color: red;
+}
+.phoneNum {
+    display: flex;
+}
+.name{
+    position: fixed; 
+    bottom: 0; 
+    width:100%; 
+    margin-left: 1700px;
+}
+</style>
+</head>
+<body>
+    <p>Click in the red to enter phone number</p>
+    <div class="main" onmousemove="showCoords(event)" onmouseout="clearCoor()" onclick="clickCoords(event)"></div>
 
-<p class="output">0000000000</p>
+
+    <p id="demo"></p>
+    <div id="phoneNum" class="phoneNum">
+        <div>Phone Number: </div>
+        <div id="area"></div>
+        <div id="mid"></div>
+        <div id="fin"></div>
+    </div>
+
+    <p class="name">Max Vali</p>
+
+
+
+
+
 <script src="phone.js"></script>
-<canvas width="200" height="200"
-        style="background-color: green">
-    </canvas>
-  
+
+</body>
+</html>
