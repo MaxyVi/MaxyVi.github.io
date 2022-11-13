@@ -27,7 +27,6 @@ function showCoords(event) {
     var last = added;
     clicks += 1;
     if (clicks == 1){
-        if ()
         area.textContent = "(" + areaCode +")-";
     }
     if (clicks == 2){
