@@ -27,7 +27,7 @@ function showCoords(event) {
     var last = added;
     clicks += 1;
     if (clicks == 1){
-        area.textContent = "(" + areaCode +")-";
+        area.textContent = '(' + areaCode +")-";
     }
     if (clicks == 2){
         mid.textContent = middle + "-";
