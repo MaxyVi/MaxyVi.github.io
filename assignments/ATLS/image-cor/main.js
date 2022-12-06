@@ -1,8 +1,8 @@
-const displayedImage = document.querySelector('.displayed-img');
-const thumbBar = document.querySelector('.thumb-bar');
+const displayedImage = document.querySelector('.displayed-img1');
+const thumbBar = document.querySelector('.thumb-bar1');
 
-const btn = document.querySelector('button');
-const overlay = document.querySelector('.overlay');
+const btn = document.querySelector('button1');
+const overlay = document.querySelector('.overlay1');
 
 /* Declaring the array of image filenames */
 const images = ['pic1.jpg', `pic2.jpg`, `pic3.jpg`, `pic4.jpg`, `pic5.jpg`];
