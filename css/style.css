@@ -204,7 +204,7 @@ nav ul li a:hover{
     padding-top: 0px;
     display: flex;
     justify-content: space-between;
-    background-color: #D29366;
+    background-color: coral;
     height: 700px;
     align-items: center;    
 }
@@ -237,7 +237,7 @@ nav ul li a:hover{
     min-height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: #D29366;
+    background-color: coral;
 }
 
 .location{
@@ -335,7 +335,7 @@ hr{
   .closebtn {
     position: absolute;
     right: 10px;
-    color: #D29366;
+    color: coral;
     font-size: 80px;
     cursor: pointer;
   }
@@ -378,7 +378,7 @@ hr{
     padding-top: 2px;
     display: flex;
     justify-content: space-between;
-    background-color: #D29366;
+    background-color: coral;
     height: 150px;
     align-items: center;    
 }
@@ -389,7 +389,7 @@ hr{
     padding-top: 2px;
     display: flex;
     justify-content: space-between;
-    background-color: #D29366;
+    background-color: coral;
     height: 150px;
 }
 
@@ -398,7 +398,7 @@ hr{
     min-height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: #D29366;
+    background-color: coral;
 }
 
 .title-1{
@@ -583,11 +583,11 @@ margin: 24px;
 }
  
 .pdfs{
-    background-color: #D29366;
+    background-color: coral;
 }
 
 .colorwedge{
-    background-color: #D29366;
+    background-color: coral;
     height: 25px;
     width: 100%;
 }
@@ -695,7 +695,7 @@ button {
 }
 
 .mrv1 {
-    width: 65%;
+    max-width: 200px;
     padding-left: 20%;
     z-index: 9;
 }
@@ -739,7 +739,7 @@ button {
     margin: 24px;
     margin-right: 130px;
     float: right;
-    margin-top: -600px;
+    margin-top: -520px;
 }
 
 .pdf2 p{
@@ -761,5 +761,13 @@ button {
 .pdf3 p{
     text-align: center;
     margin-left: 50px;
+}
+
+img#glitch1 {
+    width: 225px;
+}
+
+img#glitch2 {
+    width: 225px;
 }
 
